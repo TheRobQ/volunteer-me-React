@@ -6,10 +6,15 @@ import Signin from './components/Signin';
 
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state= {content: ''}
+
+  }
   render() {
     return (
       <div className="App">
-        <Signin />
+        <Signin value={'props', this.state.content}/>
       </div>
     );
   }

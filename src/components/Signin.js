@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 
-const Signin = () =>{
+const Signin = (props) =>{
+  console.log(props);
   return (
     <div className="signin">
 
